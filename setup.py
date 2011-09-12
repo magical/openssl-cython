@@ -4,6 +4,7 @@ from Cython.Distutils import build_ext
 
 cython_modules = [
     Extension("openssl.crypto.rsa", ["openssl/crypto/rsa.pyx"], libraries=["crypto"]),
+    Extension("openssl.crypto.bn", ["openssl/crypto/bn.pyx"], libraries=["crypto"]),
 ]
 
 setup(

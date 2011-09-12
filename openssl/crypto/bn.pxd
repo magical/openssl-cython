@@ -7,6 +7,6 @@ cdef extern from "openssl/bn.h":
 
     void BN_clear_free(BIGNUM *a)
 
-cdef extern:
+cdef:
     pylong_from_bn(BIGNUM * bn)
     pylong_as_bn(object n, BIGNUM ** bn)
